@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+core/migrations/0*.py
+
+# Virtual Environment
+venv/
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
