@@ -39,31 +39,41 @@ Portfolio/
 ## ⚙️ Getting Started
 
 ### 1. Prerequisites
+
 - Python 3.9+ installed on your system.
 
 ### 2. Activate Virtual Environment
+
 On Windows:
+
 ```powershell
 .\venv\Scripts\activate
 ```
 
 ### 3. Install Dependencies
+
 (Dependencies are already installed in the provided `venv`, but you can reinstall them via:)
+
 ```powershell
 pip install django
 ```
 
 ### 4. Run Migrations
+
 Initialize the local database:
+
 ```powershell
 python manage.py migrate
 ```
 
 ### 5. Start the Server
+
 Launch the development server:
+
 ```powershell
 python manage.py runserver
 ```
+
 Visit `http://127.0.0.1:8000` in your browser to view the site.
 
 ## 📝 Configuration
@@ -74,9 +84,11 @@ Visit `http://127.0.0.1:8000` in your browser to view the site.
 ## 🤝 Contact
 
 **Masoud**
-- **Email**: mwendamwabehah@gmail.com
+
+- **Email**: masoudusa18@gmail.com
 - **GitHub**: [github.com/MasoudMusa](https://github.com/MasoudMusa)
 - **LinkedIn**: [linkedin.com/in/MwendaMusa](https://linkedin.com/MwendaMusa)
 
 ---
-*Created with ❤️ for portfolio transformation.*
+
+_Created with ❤️ for portfolio transformation._

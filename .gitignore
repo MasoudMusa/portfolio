@@ -17,3 +17,8 @@ venv/
 Thumbs.db
 
 test_email.py
+package.json
+portfolio.md
+generated-page (11).html
+staticfiles/
+media/
