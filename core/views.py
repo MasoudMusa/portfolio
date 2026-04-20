@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import JsonResponse
 from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib import messages
@@ -26,11 +27,10 @@ def portfolio_index(request):
                 recipient_list=[settings.CONTACT_EMAIL],
                 fail_silently=False,
             )
-            messages.success(request, "Your message has been sent!")
-        except Exception:
-            messages.error(request, "Failed to send message. Please try again later.")
-            
-        return redirect('home')
+            return JsonResponse({'status': 'success', 'message': 'Your message has been sent!'})
+        except Exception as e:
+            print(f"EMAIL ERROR: {e}")
+            return JsonResponse({'status': 'error', 'message': 'Failed to send message. Please try again later.'}, status=500)
 
     return render(request, 'core/index.html', {
         'categories': categories,
